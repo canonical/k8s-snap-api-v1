@@ -9,7 +9,7 @@ type RefreshCertificatesPlanRequest struct{}
 // RefreshCertificatesPlanResponse is the response message for the RefreshCertificatesPlan RPC.
 type RefreshCertificatesPlanResponse struct {
 	// Seed should be passed by clients to the RefreshCertificatesRun RPC.
-	Seed int `json:"seconds"`
+	Seed int `json:"seed"`
 	// CertificateSigningRequests is a list of names of the CertificateSigningRequests that need to be signed externally (for worker nodes).
 	CertificateSigningRequests []string `json:"certificate-signing-requests"`
 }
