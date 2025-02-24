@@ -15,5 +15,5 @@ type GetClusterConfigResponse struct {
 	// NodeTaints is a list of taints to apply to the nodes.
 	// If the request comes from a control plane node, will contain the taints applied on the control plane nodes.
 	// If the request comes from a worker node, will contain the taints applied on the worker nodes.
-	NodeTaints *[]string `json:"nodeTaints,omitempty" yaml:"nodeTaints,omitempty"`
+	NodeTaints *[]string `json:"node-taints,omitempty" yaml:"node-taints,omitempty"`
 }
